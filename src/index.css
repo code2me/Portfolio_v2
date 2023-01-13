@@ -21,7 +21,7 @@
 
     --container-width-lg: 75%;
     --constainer-width-md: 86%;
-    --constainer-width-ms: 90%;
+    --constainer-width-sm: 90%;
 }
 
 html {
@@ -90,7 +90,7 @@ a:hover {
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(color-primary);
+    border: 1px solid var(--color-primary);
     transition: var(--transition);
 }
 
@@ -109,4 +109,24 @@ img {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+/* ____________________________ MEDIA QUERIES (MEDIUM DEVICES) ____________________________*/
+@media screen and (max-width:1024px) {
+    .container {
+        width: var(--constainer-width-md);
+    }
+    section {
+        margin-top: 6rem;
+    }
+}
+
+/* ____________________________ MEDIA QUERIES (SMALL DEVICES) ____________________________*/
+@media screen and (max-width:600px) {
+    .container {
+        width: var(--constainer-width-sm);
+    }
+    section > h2 {
+        margin-bottom: 2rem;
+    }
 }
