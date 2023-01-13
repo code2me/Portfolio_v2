@@ -2,7 +2,7 @@
 
 ## Portfolio Website using React
 
-[Deployed on Vercel](https://navneetbahuguna.vercel.app/){:target="_blank"}
+[Deployed on Vercel](https://navneetbahuguna.vercel.app/){target="_blank"}
 
 ## Built With
 
