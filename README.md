@@ -1,9 +1,8 @@
-<h1 align="center"> React Portfolio </h1>
+# React Portfolio
 
-<h2 align="center">
-  Portfolio Website using React <br/>
-  <a href="https://navneetbahuguna.vercel.app/" target="_blank">Deployed on Vercel</a>
-</h2>
+## Portfolio Website using React
+
+[Deployed on Vercel](https://navneetbahuguna.vercel.app/){:target="_blank"}
 
 ## Built With
 
