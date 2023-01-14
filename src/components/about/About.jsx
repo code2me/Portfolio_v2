@@ -36,12 +36,7 @@ const About = () => {
             </article>
           </div>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
-            dolore laudantium omnis molestias a ratione quidem sit
-            necessitatibus exercitationem nostrum corporis. Nemo minus
-            exercitationem maiores et hic sit assumenda repudiandae.
-          </p>
+          <p>{Data.About.paragraph}</p>
 
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>

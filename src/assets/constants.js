@@ -18,5 +18,25 @@ export const Data = {
     Experience: "6+ months of intership experience",
     Projects: "5+ MERN Stack Project",
     Research_Papers: "Worked on 2 research papers",
+    paragraph:
+      "Hi, I am a software developer and technology enthusiast with a passion for building innovative solutions to complex problems. I have a strong foundation in programming languages such as Java, JavaScript and Python and i am always eager to learn and explore new technologies. In my free time, I enjoy staying up to date on the latest industry trends and attending tech conferences and hackathons to expand my skillset.",
+  },
+  Experience: {
+    Frontend: [
+      ["HTML", "Experienced"],
+      ["CSS", "Intermediate"],
+      ["JavaScript", "Experienced"],
+      ["Bootstrap", "Experienced"],
+      ["Tailwind", "Intermediate"],
+      ["React", "Experienced"],
+    ],
+    Backend: [
+      ["Node JS", "Experienced"],
+      ["MongoDB", "Intermediate"],
+      ["Python", "Intermediate"],
+      ["MySQL", "Experienced"],
+      ["Java", "Intermediate"],
+      ["Blockchain", "Intermediate"]
+    ],
   },
 };
