@@ -8,6 +8,9 @@
 
 This project was built using these technologies.
 
-- React.js
+- ReactJS
 - VsCode
 - Vercel
+- VantaJS
+- ThreeJS
+- EmailJS
