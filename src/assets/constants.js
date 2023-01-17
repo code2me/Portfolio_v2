@@ -1,9 +1,18 @@
+
+import IMG1 from "./portfolio1.jpg";
+import IMG2 from "./portfolio2.jpg";
+import IMG3 from "./portfolio3.jpg";
+import IMG4 from "./portfolio4.jpg";
+import IMG5 from "./portfolio5.png";
+import IMG6 from "./portfolio6.jpg";
+
 export const Data = {
   CV: "https://drive.google.com/file/d/1-913gXmDeJNUhYCJTtkj1wAdr5orLrl8/view?usp=share_link",
   LINKEDIN: "https://www.linkedin.com/in/cypherzz/",
   GITHUB: "https://github.com/code2me",
   LEETCODE: "https://leetcode.com/Cypherzz/",
   TWITTER: "https://twitter.com/cypherzz",
+  INSTA: "https://www.instagram.com/xeqnav/",
   stepsArr: [
     "Frontend Developer",
     3000,
@@ -39,4 +48,48 @@ export const Data = {
       ["Blockchain", "Intermediate"]
     ],
   },
+  Projects: [
+    {
+      id: 1,
+      Image: IMG1,
+      title: 'Title for Image 1',
+      github: 'https://github.com',
+      demo: 'https://github.com'
+    },
+    {
+      id: 2,
+      Image: IMG2,
+      title: 'Title for Image 2',
+      github: 'https://github.com',
+      demo: 'https://github.com'
+    },
+    {
+      id: 3,
+      Image: IMG3,
+      title: 'Title for Image 3',
+      github: 'https://github.com',
+      demo: 'https://github.com'
+    },
+    {
+      id: 4,
+      Image: IMG4,
+      title: 'Title for Image 4',
+      github: 'https://github.com',
+      demo: 'https://github.com'
+    },
+    {
+      id: 5,
+      Image: IMG5,
+      title: 'Title for Image 5',
+      github: 'https://github.com',
+      demo: 'https://github.com'
+    },
+    {
+      id: 6,
+      Image: IMG6,
+      title: 'Title for Image 6',
+      github: 'https://github.com',
+      demo: 'https://github.com'
+    },
+  ]
 };

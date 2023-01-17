@@ -1,6 +1,7 @@
-import React from 'react'
-import './experience.css'
-import {Data} from '../../assets/constants'
+import React from "react";
+import "./experience.css";
+import { Data } from "../../assets/constants";
+import { BsPatchCheckFill } from "react-icons/bs";
 
 const Experience = () => {
   return (
@@ -12,17 +13,35 @@ const Experience = () => {
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
-           
+            {Data.Experience.Frontend.map((Array) => (
+              <article className="experience_details" key={Array}>
+                <BsPatchCheckFill className="experience_details-icon" />
+                <div>
+                  <h4>{Array[0]}</h4>
+                  <small className="text-light">{Array[1]}</small>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
 
         <div className="experience__backend">
           <h3>Backend Development</h3>
-          <div className="experience__content"></div>
+          <div className="experience__content">
+            {Data.Experience.Backend.map((Array) => (
+              <article className="experience_details" key={Array}>
+                <BsPatchCheckFill className="experience_details-icon" />
+                <div>
+                  <h4>{Array[0]}</h4>
+                  <small className="text-light">{Array[1]}</small>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Experience
+export default Experience;
