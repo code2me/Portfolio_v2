@@ -11,7 +11,7 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {Data.Projects.map((Obj) => {
           return (
-            <article className="portfolio__item" key={Obj.id}>
+            <article className="portfolio__item ambient-light" key={Obj.id}>
               <div className="portfolio__item-image">
                 <img src={Obj.Image} alt="" />
               </div>

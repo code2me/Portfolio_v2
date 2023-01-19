@@ -7,6 +7,8 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import { useEffect, useRef, useState } from "react";
 import FOG from 'vanta/dist/vanta.fog.min';
+import "react-notifications-component/dist/theme.css";
+import { ReactNotifications } from "react-notifications-component";
 import * as THREE from "three";
 
 
@@ -50,16 +52,17 @@ const App = () => {
   }, [vantaEffect])
 
   return (
-    <div className='vanta' ref={vantaRef}>
-        <Header />
-        <Nav />
-        <About />
-        <Experience />
-        <Portfolio />
-        <Contact />
-        <Footer />
+    <div className="vanta" ref={vantaRef}>
+      <ReactNotifications />
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Contact />
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default App

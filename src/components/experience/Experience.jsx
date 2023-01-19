@@ -10,7 +10,7 @@ const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience__container">
-        <div className="experience__frontend">
+        <div className="experience__frontend ambient-light">
           <h3>Frontend Development</h3>
           <div className="experience__content">
             {Data.Experience.Frontend.map((Array) => (
@@ -25,7 +25,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience__backend">
+        <div className="experience__backend ambient-light">
           <h3>Backend Development</h3>
           <div className="experience__content">
             {Data.Experience.Backend.map((Array) => (

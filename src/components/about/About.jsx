@@ -19,17 +19,17 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
+            <article className="about__card ambient-light">
               <HiOutlineBuildingOffice2 className="about__icon" />
               <h5>Experience</h5>
               <small>{Data.About.Experience}</small>
             </article>
-            <article className="about__card">
+            <article className="about__card ambient-light">
               <FaAward className="about__icon" />
               <h5>Research Paper</h5>
               <small>{Data.About.Research_Papers}</small>
             </article>
-            <article className="about__card">
+            <article className="about__card ambient-light">
               <FaFolderOpen className="about__icon" />
               <h5>Projects</h5>
               <small>{Data.About.Projects}</small>
@@ -38,7 +38,9 @@ const About = () => {
 
           <p>{Data.About.paragraph}</p>
 
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="colorful-button">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>

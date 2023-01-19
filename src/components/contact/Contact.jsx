@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./contact.css";
 import { SiGmail, SiLinkedin } from "react-icons/si";
 import emailjs from "@emailjs/browser";
+import toast from "../../utils/toast";
 
 const Contact = () => {
   const form = useRef();
@@ -17,11 +18,19 @@ const Contact = () => {
         process.env.REACT_APP_EMAIL_JS_USERID
       )
       .then(
-        (response) => {
-          alert("SUCCESS!", response.status, response.text);
+        () => {
+          toast({
+            message: "Thanks for the message. I will try to respond ASAP",
+            type: "success",
+            time: 5000,
+          });
         },
-        (err) => {
-          alert("FAILED...", err);
+        () => {
+          toast({
+            message: "OOPs.. Message is not sent",
+            type: "error",
+            time: 3000,
+          });
         }
       );
     e.target.reset();
@@ -34,14 +43,14 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article>
-            <div className="contact__option">
+            <div className="contact__option ambient-light">
               <SiGmail className="contact__option-icon" />
               <h4>Email</h4>
               <a href="mailto:navneetbahuguna007@gmail.com">Send a message</a>
             </div>
           </article>
           <article>
-            <div className="contact__option">
+            <div className="contact__option ambient-light">
               <SiLinkedin className="contact__option-icon" />
               <h4>Linked In</h4>
               <a href="https://www.linkedin.com/in/cypherzz/">
@@ -66,7 +75,7 @@ const Contact = () => {
             rows="7"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="colorful-button">
             Send Message
           </button>
         </form>
