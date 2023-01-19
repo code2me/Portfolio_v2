@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import me_about from "../../assets/me_about.jpeg";
-import { Data } from "../../assets/constants";
+import { Data } from "../../utils/constants";
 import { FaAward, FaFolderOpen } from "react-icons/fa";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 

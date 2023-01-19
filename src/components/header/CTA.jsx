@@ -1,5 +1,5 @@
 import React from 'react'
-import {Data} from '../../assets/constants'
+import {Data} from '../../utils/constants'
 
 const CTA = () => {
   return (

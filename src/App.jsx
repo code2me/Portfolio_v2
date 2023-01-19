@@ -1,21 +1,32 @@
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Experience from './components/experience/Experience'
-import Portfolio from './components/portfolio/Portfolio'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+import Header from "./components/header/Header";
+import Nav from "./components/nav/Nav";
+import About from "./components/about/About";
+import Experience from "./components/experience/Experience";
+import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 import { useEffect, useRef, useState } from "react";
-import FOG from 'vanta/dist/vanta.fog.min';
+import FOG from "vanta/dist/vanta.fog.min";
 import "react-notifications-component/dist/theme.css";
 import { ReactNotifications } from "react-notifications-component";
 import * as THREE from "three";
+import Favicon from "react-favicon";
+import HTML_logo from './assets/favicon/HTML_logo.ico'
+import JS_logo from "./assets/favicon/JS_logo.ico";
+import TS_logo from "./assets/favicon/TS_logo.ico";
+import CSS_logo from "./assets/favicon/CSS_logo.ico";
+import ReactJS_logo from "./assets/favicon/ReactJS_logo.ico";
+import Redux_logo from "./assets/favicon/Redux_logo.ico";
 
+// const favIcon = [
+//   "https://www.flaticon.com/free-icon/portfolio_281089?term=portfolio&related_id=281089",
+//   "https://www.flaticon.com/free-icon/portfolio_281190?term=portfolio&related_id=281190",
+//   "https://www.flaticon.com/free-icon/portfolio_351456?related_id=281190&origin=search",
+// ];
 
 const App = () => {
-
-  const [vantaEffect, setVantaEffect] = useState(0)
-  const vantaRef = useRef(null)
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const vantaRef = useRef(null);
 
   useEffect(() => {
     const threeScript = document.createElement("script");
@@ -44,15 +55,16 @@ const App = () => {
       );
     }
     return () => {
-      if(threeScript) {
+      if (threeScript) {
         threeScript.remove();
       }
       if (vantaEffect) vantaEffect.destroy();
-    }
-  }, [vantaEffect])
+    };
+  }, [vantaEffect]);
 
   return (
     <div className="vanta" ref={vantaRef}>
+      <Favicon url={[HTML_logo, CSS_logo, JS_logo, TS_logo, ReactJS_logo, Redux_logo]} />
       <ReactNotifications />
       <Header />
       <Nav />
@@ -63,6 +75,6 @@ const App = () => {
       <Footer />
     </div>
   );
-}
+};
 
-export default App
+export default App;

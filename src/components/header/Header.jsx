@@ -3,7 +3,7 @@ import CTA from './CTA'
 import ME from '../../assets/me.png'
 import HeaderSocials from './HeaderSocials'
 import Typical from 'react-typical'
-import {Data} from '../../assets/constants'
+import {Data} from '../../utils/constants'
 
 const Header = () => {
   return (

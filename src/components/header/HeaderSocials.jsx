@@ -1,8 +1,7 @@
-import {Data} from '../../assets/constants'
+import {Data} from '../../utils/constants'
 import {BsLinkedin} from 'react-icons/bs'
-import {FaGithub} from 'react-icons/fa'
+import { FaGithub, FaTwitterSquare } from "react-icons/fa";
 import {SiLeetcode} from 'react-icons/si'
-import {FaTwitterSquare} from 'react-icons/fa'
 const HeaderSocials = () => {
   return (
     <div className="header__socials">

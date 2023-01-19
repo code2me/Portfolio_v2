@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { Data } from "../../assets/constants";
+import { Data } from "../../utils/constants";
 import { SiLeetcode, SiLinkedin, SiInstagram } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 

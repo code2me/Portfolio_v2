@@ -1,6 +1,6 @@
 import React from "react";
 import "./experience.css";
-import { Data } from "../../assets/constants";
+import { Data } from "../../utils/constants";
 import { BsPatchCheckFill } from "react-icons/bs";
 
 const Experience = () => {
