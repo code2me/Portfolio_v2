@@ -9,7 +9,6 @@
 This project was built using these technologies.
 
 - ReactJS
-- VsCode
 - Vercel
 - VantaJS
 - ThreeJS
