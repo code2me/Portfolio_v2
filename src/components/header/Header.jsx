@@ -4,6 +4,7 @@ import ME from '../../assets/me.png'
 import HeaderSocials from './HeaderSocials'
 import Typical from 'react-typical'
 import {Data} from '../../utils/constants'
+import Blob from './Blob'
 
 const Header = () => {
   return (
@@ -17,11 +18,12 @@ const Header = () => {
         <CTA />
         <HeaderSocials />
 
-        <div className="me">
-          <img
-            src={ME}
-            alt=""
-          />
+        <div className="blob">
+          <Blob />
+        </div>
+
+        <div className='me'>
+          <img src={ME} alt="" />
         </div>
 
         <a href="#contact" className="scroll__down">

@@ -40,7 +40,6 @@ header {
 /*_______________ ME _______________*/
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 22rem;
     position: absolute;
@@ -49,6 +48,12 @@ header {
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 3rem 1rem 1rem 1rem;
+}
+
+.blob {
+    position: absolute;
+    left: calc(50% - 27rem);
+    z-index: -1;
 }
 
 /*_______________ SCROLL DOWN _______________*/
@@ -67,6 +72,9 @@ header {
     header {
         height: 68vh;
     }
+    .me {
+        margin-top: 8rem;
+    }
 }
 
 /* ____________________________ MEDIA QUERIES (SMALL DEVICES) ____________________________*/
@@ -77,5 +85,9 @@ header {
 
     .header__socials, .scroll__down {
         display: none;
+    }
+
+    .me {
+        margin-top: 7rem;
     }
 }
