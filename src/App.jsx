@@ -17,55 +17,53 @@ import TS_logo from "./assets/favicon/TS_logo.ico";
 import CSS_logo from "./assets/favicon/CSS_logo.ico";
 import ReactJS_logo from "./assets/favicon/ReactJS_logo.ico";
 import Redux_logo from "./assets/favicon/Redux_logo.ico";
-
-// const favIcon = [
-//   "https://www.flaticon.com/free-icon/portfolio_281089?term=portfolio&related_id=281089",
-//   "https://www.flaticon.com/free-icon/portfolio_281190?term=portfolio&related_id=281190",
-//   "https://www.flaticon.com/free-icon/portfolio_351456?related_id=281190&origin=search",
-// ];
+import BackgroundTexture from "./components/background/BackgroundTexture";
 
 const App = () => {
-  const [vantaEffect, setVantaEffect] = useState(0);
-  const vantaRef = useRef(null);
+  // const [vantaEffect, setVantaEffect] = useState(0);
+  // const vantaRef = useRef(null);
 
-  useEffect(() => {
-    const threeScript = document.createElement("script");
-    threeScript.setAttribute("id", "threeScript");
-    threeScript.setAttribute(
-      "src",
-      "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
-    );
-    document.getElementsByTagName("head")[0].appendChild(threeScript);
+  // useEffect(() => {
+  //   const threeScript = document.createElement("script");
+  //   threeScript.setAttribute("id", "threeScript");
+  //   threeScript.setAttribute(
+  //     "src",
+  //     "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+  //   );
+  //   document.getElementsByTagName("head")[0].appendChild(threeScript);
 
-    if (!vantaEffect) {
-      setVantaEffect(
-        FOG({
-          el: vantaRef.current,
-          THREE,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: true,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          highlightColor: 0x4db5ff,
-          midtoneColor: 0x1f1f38,
-          lowlightColor: 0x4db5ff,
-          baseColor: 0x000,
-        })
-      );
-    }
-    return () => {
-      if (threeScript) {
-        threeScript.remove();
-      }
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
+  //   if (!vantaEffect) {
+  //     setVantaEffect(
+  //       FOG({
+  //         el: vantaRef.current,
+  //         THREE,
+  //         mouseControls: true,
+  //         touchControls: true,
+  //         gyroControls: true,
+  //         minHeight: 200.0,
+  //         minWidth: 200.0,
+  //         highlightColor: 0x4db5ff,
+  //         midtoneColor: 0x1f1f38,
+  //         lowlightColor: 0x4db5ff,
+  //         baseColor: 0x000,
+  //       })
+  //     );
+  //   }
+  //   return () => {
+  //     if (threeScript) {
+  //       threeScript.remove();
+  //     }
+  //     if (vantaEffect) vantaEffect.destroy();
+  //   };
+  // }, [vantaEffect]);
 
   return (
-    <div className="vanta" ref={vantaRef}>
-      <Favicon url={[HTML_logo, CSS_logo, JS_logo, TS_logo, ReactJS_logo, Redux_logo]} />
+    <div>
+      <Favicon
+        url={[HTML_logo, CSS_logo, JS_logo, TS_logo, ReactJS_logo, Redux_logo]}
+      />
       <ReactNotifications />
+      <BackgroundTexture />
       <Header />
       <Nav />
       <About />
